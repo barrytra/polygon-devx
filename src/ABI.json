@@ -1,0 +1,303 @@
+[
+	{
+		"inputs": [],
+		"name": "chainKeeper",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "int256",
+				"name": "_depositAmount",
+				"type": "int256"
+			},
+			{
+				"internalType": "int256",
+				"name": "_withdrawAmount",
+				"type": "int256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_maturityPeriod",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bool",
+				"name": "_canWithdrawAnytime",
+				"type": "bool"
+			}
+		],
+		"name": "deposit",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_address",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_id",
+				"type": "uint256"
+			}
+		],
+		"name": "getInterest",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_truflationTesterAddress",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "_verseTokenContract",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_timer",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_timer",
+				"type": "uint256"
+			}
+		],
+		"name": "updateTimer",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_id",
+				"type": "uint256"
+			},
+			{
+				"internalType": "int256",
+				"name": "_withdrawAmount",
+				"type": "int256"
+			}
+		],
+		"name": "withdraw",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_id",
+				"type": "uint256"
+			}
+		],
+		"name": "getDeposit",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "int256",
+						"name": "depositAmount",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "currentAmount",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "withdrawAmount",
+						"type": "int256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "depositTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "maturityPeriod",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "canWithdrawAnytime",
+						"type": "bool"
+					}
+				],
+				"internalType": "struct Debenture.Savings",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_id",
+				"type": "uint256"
+			}
+		],
+		"name": "getHistory",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "int256",
+						"name": "amount",
+						"type": "int256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "time",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct Debenture.data[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getIDs",
+		"outputs": [
+			{
+				"internalType": "uint256[]",
+				"name": "",
+				"type": "uint256[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "interestRate",
+		"outputs": [
+			{
+				"internalType": "int256",
+				"name": "",
+				"type": "int256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "owner",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "savings",
+		"outputs": [
+			{
+				"internalType": "int256",
+				"name": "depositAmount",
+				"type": "int256"
+			},
+			{
+				"internalType": "int256",
+				"name": "currentAmount",
+				"type": "int256"
+			},
+			{
+				"internalType": "int256",
+				"name": "withdrawAmount",
+				"type": "int256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "depositTime",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "maturityPeriod",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bool",
+				"name": "canWithdrawAnytime",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "truflationTester",
+		"outputs": [
+			{
+				"internalType": "contract TruflationTester",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "verseTokensContract",
+		"outputs": [
+			{
+				"internalType": "contract Token",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
