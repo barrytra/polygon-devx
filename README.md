@@ -1,5 +1,5 @@
 ## Demo video
-https://www.loom.com/share/0371895691bc431d80ac4a23064e2eff?sid=4bf99c27-fdd8-44f4-a861-a28ff5bb0709
+watch the demo <a href="https://youtu.be/BHJvw278BX0">here</a>
 
 ## Inspiration
 Government/Private banks provide interest rates which is fixed and is not related to inflation rates of the country. Problem with this approach is that users while earning interest might still suffer loss if the inflation rates become higher than the interest rate that banks provides. For eg, if the interest rate provided by bank is 3% and the inflation rate is 6%, user suffer a loss. We solve this problem using inflation rate data provided by Truflation per day. We give interest to users on daily basis by fetching latest inflation rate automatically every 24hr. Users also have the ability to withdraw automatically on reaching certain profit.
